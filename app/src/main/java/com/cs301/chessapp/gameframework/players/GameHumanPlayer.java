@@ -292,7 +292,7 @@ public abstract class GameHumanPlayer implements GamePlayer, Tickable {
                 gameOver = true;
 
                 //Since the game is over, we will ask the player if they would like to restart the game
-                String quitQuestion = ((GameOverInfo)myInfo).getMessage() + "Would you like to restart the game?";
+                String quitQuestion = ((GameOverInfo)myInfo).getMessage() + " Would you like to restart the game?";
                 String posLabel = "Yes!";
                 String negLabel = "No";
                 MessageBox.popUpChoice(quitQuestion, posLabel, negLabel,

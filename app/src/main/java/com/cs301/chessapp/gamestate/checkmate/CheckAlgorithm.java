@@ -33,10 +33,10 @@ public class CheckAlgorithm {
     public boolean moveIsCheck(int row, int col) {
         for (ChessMove move : _checkedMoves) {
             if (move.getEndRow() == row && move.getEndCol() == col) {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     /**

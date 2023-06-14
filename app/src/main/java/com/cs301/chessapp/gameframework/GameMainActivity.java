@@ -196,16 +196,16 @@ public abstract class GameMainActivity extends AppCompatActivity implements
             }
         }
 
-        if (((CheckBox) findViewById(R.id.onScreenLogging)).isChecked()) {
-            Logger.setToastValue(true);
-        } else {
-            Logger.setToastValue(false);
-        }
-        if (((CheckBox) findViewById(R.id.debugLogging)).isChecked()){
-            Logger.setDebugValue(true);
-        }else {
-            Logger.setDebugValue(false);
-        }
+//        if (((CheckBox) findViewById(R.id.onScreenLogging)).isChecked()) {
+//            Logger.setToastValue(true);
+//        } else {
+//            Logger.setToastValue(false);
+//        }
+//        if (((CheckBox) findViewById(R.id.debugLogging)).isChecked()){
+//            Logger.setDebugValue(true);
+//        }else {
+//            Logger.setDebugValue(false);
+//        }
     }// onCreate
 
     /**
@@ -502,10 +502,10 @@ public abstract class GameMainActivity extends AppCompatActivity implements
         v.setOnClickListener(this);
         v = findViewById(R.id.playGameButton);
         v.setOnClickListener(this);
-        v = findViewById(R.id.onScreenLogging);
-        v.setOnClickListener(this);
-        v = findViewById(R.id.debugLogging);
-        v.setOnClickListener(this);
+//        v = findViewById(R.id.onScreenLogging);
+//        v.setOnClickListener(this);
+//        v = findViewById(R.id.debugLogging);
+//        v.setOnClickListener(this);
 
         String ipCode = IPCoder.encodeLocalIP();
         String ipAddress = IPCoder.getLocalIpAddress();
@@ -608,22 +608,22 @@ public abstract class GameMainActivity extends AppCompatActivity implements
         }
 
         //On-screen debugging checkbox
-        else if(button.getId() == R.id.onScreenLogging){
-            if(((CheckBox)button).isChecked()){
-                Logger.setToastValue(true);
-            }else{
-                Logger.setToastValue(false);
-            }
-        }
+//        else if(button.getId() == R.id.onScreenLogging){
+//            if(((CheckBox)button).isChecked()){
+//                Logger.setToastValue(true);
+//            }else{
+//                Logger.setToastValue(false);
+//            }
+//        }
 
         //Console debugging checkbox
-        else if(button.getId() == R.id.debugLogging){
-            if(((CheckBox)button).isChecked()){
-                Logger.setDebugValue(true);
-            }else{
-                Logger.setDebugValue(false);
-            }
-        }
+//        else if(button.getId() == R.id.debugLogging){
+//            if(((CheckBox)button).isChecked()){
+//                Logger.setDebugValue(true);
+//            }else{
+//                Logger.setDebugValue(false);
+//            }
+//        }
 
     }// onClick
 
